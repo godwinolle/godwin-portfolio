@@ -1,0 +1,40 @@
+.navigation{
+    margin-top: 35%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.navigation ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navigation .links{
+    text-decoration: none;
+    color: #797979;
+    letter-spacing: 0.1em;
+}
+/*small tablets*/
+@media screen and (min-width: 620px){
+    .navigation{
+        margin: 20px auto;
+        margin-top: 100px;
+        width: 30%;
+
+    }
+}
+/*large tablets & laptop styles*/
+@media screen and (min-width: 960px){
+    .navigation{
+        margin-top: 170px;
+        width: 30%;
+    }
+}
+/*desktop styles*/
+@media screen and (min-width: 1200px){
+    .navigation{
+        margin-top: 200px;
+        width: 20%;
+    }
+}
