@@ -4,7 +4,8 @@
 }
 .home-head img{
     margin-top: 20px;
-    max-width: 200px;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
     border: 2px solid #D1D1D1;
 }
@@ -48,6 +49,9 @@
 @media only screen and (min-width: 620px){
     .home-head .social-links{
         width: 10%;
+    }
+    .home-head img{
+        width: 200px;
     }
     .home-head hr{
         width: 30%;
