@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useContext} from 'react'
+
+import {ToggleContext} from '../../ToggleContext'
 
 import HomeHead from '../../components/home/homeHead'
 
 const Home = () => {
+    const [checked] = useContext(ToggleContext); 
     return(
-        <div>
+        <div className={checked ? "dark" : "light"}>
             <HomeHead />
         </div>
     )

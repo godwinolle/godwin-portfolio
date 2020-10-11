@@ -70,3 +70,13 @@ input:checked + .slider:before {
     align-items: center;
     font-size: 20px;
 }
+
+.light{
+    background-color: #fbfbfb;
+    color: #000;
+}
+
+.dark{
+    background-color: #111;
+    color: #fff;
+}
