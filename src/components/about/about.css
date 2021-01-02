@@ -7,6 +7,11 @@
     margin: 20px 0;
     letter-spacing: 0.20em;
     font-weight: 500;
+    cursor: default;
+}
+.about-section p{
+    cursor: default;
+    font-size: 12px;
 }
 
 @media screen and (min-width: 620px){
@@ -14,6 +19,9 @@
         width: 70%;
         margin: 0 auto;
         padding: 10px;
+    }
+    .about-section p{
+        font-size: 15px;
     }
 }
 /*large tablets & laptop styles*/

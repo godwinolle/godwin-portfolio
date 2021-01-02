@@ -10,12 +10,12 @@ import './toggle.css'
 const ToggleButton = () => {
     const [checked, setChecked] = useContext(ToggleContext);
     
-
     const handleCheck = () => {
         setChecked(!checked)
+        localStorage.setItem('check', !checked);
     }
 
-    localStorage.setItem('check', checked);
+    //localStorage.setItem('check', checked);
 
     if(checked){
         document.body.style.backgroundColor = "#111"
@@ -23,13 +23,13 @@ const ToggleButton = () => {
             <div className={checked ? "toggle dark" : "toggle light"}>
                 <p className="togglers"><RiSunLine /></p>
                 <label className="switch">
-                    <input type="checkbox"  defaultChecked onClick={ handleCheck }/>
+                    <input type="checkbox" defaultChecked onClick={ handleCheck }/>
                         <span className="slider round"></span>
                 </label>
                 <p className="togglers"><RiMoonFill /></p>
             </div>
         )
-    } else{
+    } else {
         document.body.style.backgroundColor = "#FBFBFB"
         return(
             <div className={checked ? "toggle dark" : "toggle light"}>

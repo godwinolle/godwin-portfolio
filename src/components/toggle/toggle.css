@@ -72,11 +72,9 @@ input:checked + .slider:before {
 }
 
 .light{
-    background-color: #fbfbfb;
     color: #000;
 }
 
 .dark{
-    background-color: #111;
     color: #fff;
 }
